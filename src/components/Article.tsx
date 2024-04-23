@@ -19,7 +19,7 @@ const Article = ({ title, content, id }: ArticleType) => {
       className="w-32 border rounded-md p-4 hover:bg-gray-100 cursor-pointer"
       onClick={clickHandler}
     >
-      <div className="text-lg font-bold">{title}</div>
+      <div className="text-lg font-bold ">{title}</div>
       <div className="text-sm">{content.slice(0, 30)}</div>
     </div>
   );

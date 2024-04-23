@@ -59,4 +59,4 @@ export const aricleList = [
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit at nesciunt dignissimos voluptatibus doloribus adipisci magni repellat porro officiis corporis? Accusamus ullam distinctio omnis? Aut neque non voluptate aliquid iste.",
   },
-]
+];
