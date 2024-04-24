@@ -7,7 +7,7 @@ const meta = {
   component: Navigation,
   tags: ["autodocs"],
   parameters: {
-    layout: "fullscreen",
+    layout: "centered",
     nextjs: {
       appDirectory: true,
     },
