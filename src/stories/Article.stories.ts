@@ -10,10 +10,6 @@ const meta = {
     layout: "centered",
     nextjs: {
       appDirectory: true,
-      navigation: {
-        pathname: "/1",
-        query: {},  
-      },
     },
   },
   args: {
@@ -32,10 +28,11 @@ export const ArticleComponent: Story = {
     title: "Article Test1",
     content: "skladjaksldjsoidjsaiodsakldsajklsaj;kdlsakljdsa",
   },
-  play: async ({ canvasElement }) => {
+  play: async ({ args, canvasElement }) => {
+    console.log("args", args);
     const canvas = within(canvasElement);
     const article = canvas.getByTestId("article");
-    
+
     await expect(article).toBeInTheDocument();
     await userEvent.click(article);
   },

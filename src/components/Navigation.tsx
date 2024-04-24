@@ -3,8 +3,12 @@ import { Button } from "@/shadcn-components/ui/button";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
-const Navigation = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+interface NavigationProps {
+  loginState?: boolean;
+}
+
+const Navigation = ({ loginState = false }: NavigationProps) => {
+  const [isLoggedIn, setIsLoggedIn] = useState(loginState);
   const router = useRouter();
   return (
     <nav className="flex justify-between min-w-[900px] items-center h-[30px] cursor-pointer">
